@@ -1,0 +1,139 @@
+.membresias {
+  background: var(--dark);
+  border-top: 1px solid var(--border);
+}
+
+.periodo-toggle {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.periodo-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: var(--mid);
+  border: 1px solid var(--border);
+  color: var(--grey);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.periodo-btn:hover { color: var(--white); border-color: var(--gold); }
+.periodo-btn.active { background: var(--gold); border-color: var(--gold); color: var(--black); }
+
+.descuento-badge {
+  background: var(--red);
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.periodo-btn.active .descuento-badge {
+  background: var(--black);
+  color: var(--gold);
+}
+
+.planes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2px;
+}
+
+.plan-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.plan-card:hover { border-color: var(--gold); }
+.plan-card.popular { border-color: var(--gold); background: #141209; }
+
+.popular-badge {
+  position: absolute;
+  top: -1px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--black);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 4px 16px;
+}
+
+.plan-header { margin-bottom: 28px; }
+
+.plan-nombre {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.plan-precio {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.precio-signo { font-size: 1.2rem; color: var(--gold); font-weight: 600; }
+.precio-num { font-family: var(--font-display); font-size: 3.2rem; color: var(--gold); line-height: 1; }
+.precio-periodo { font-size: 0.8rem; color: var(--grey); margin-left: 4px; }
+
+.plan-desc { font-size: 0.85rem; color: var(--grey); line-height: 1.5; }
+
+.plan-beneficios {
+  list-style: none;
+  flex: 1;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.beneficio-si { font-size: 0.85rem; color: var(--white); }
+.beneficio-no { font-size: 0.85rem; color: var(--border); text-decoration: line-through; }
+
+.plan-btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.plan-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+.plan-btn-gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--black);
+}
+
+.plan-btn-gold:hover {
+  background: var(--gold-lt);
+  border-color: var(--gold-lt);
+  color: var(--black);
+}
