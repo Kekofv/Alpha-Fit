@@ -7,9 +7,6 @@ const links = [
   { label: 'Horarios',   href: '#horarios' },
   { label: 'Membresías', href: '#membresias' },
   { label: 'Servicios',  href: '#servicios' },
-  { label: 'Galería',    href: '#galeria' },
-  { label: 'Contacto',   href: '#contacto' },
-  { label: 'Ubicación',  href: '#ubicacion' },
 ];
 
 export default function Navbar() {
