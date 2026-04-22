@@ -1,0 +1,47 @@
+.servicios {
+  background: var(--black);
+  border-top: 1px solid var(--border);
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2px;
+}
+
+.servicio-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 32px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: default;
+}
+
+.servicio-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.servicio-icono { font-size: 2rem; display: block; margin-bottom: 16px; }
+
+.servicio-nombre {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.servicio-desc { font-size: 0.85rem; color: var(--grey); line-height: 1.7; }
+
+.servicio-hover-bar {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px; width: 0;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.servicio-card:hover .servicio-hover-bar { width: 100%; }
