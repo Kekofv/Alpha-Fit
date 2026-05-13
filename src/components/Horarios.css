@@ -1,0 +1,126 @@
+.horarios {
+  background: var(--black);
+  border-top: 1px solid var(--border);
+}
+
+.horario-general {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.hg-card {
+  flex: 1;
+  min-width: 180px;
+  background: var(--mid);
+  border: 1px solid var(--border);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hg-dia {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--grey);
+}
+
+.hg-hora {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.clases-titulo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 20px;
+  letter-spacing: 0.06em;
+}
+
+.dias-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.dia-tab {
+  padding: 8px 18px;
+  background: var(--mid);
+  border: 1px solid var(--border);
+  color: var(--grey);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dia-tab:hover { border-color: var(--gold); color: var(--white); }
+.dia-tab.active { background: var(--gold); border-color: var(--gold); color: var(--black); }
+
+.clases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.clase-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.clase-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent, var(--gold));
+}
+
+.clase-color-bar {
+  width: 4px;
+  background: var(--accent, var(--gold));
+  flex-shrink: 0;
+}
+
+.clase-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.clase-nombre {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--white);
+  letter-spacing: 0.05em;
+}
+
+.clase-instructor {
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+
+.clase-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: var(--grey);
+  margin-top: 4px;
+}
+
+.no-clases {
+  color: var(--grey);
+  font-size: 0.9rem;
+  padding: 24px 0;
+}
